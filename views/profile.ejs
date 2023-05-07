@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hair Care Site</title>
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="modal-container">
+    <div class="modal-background">
+      <div class="modal">
+        <h2>Tell us about your hair</h2> 
+        <form action="/submit" method="post">
+          <label for="hairtype">Choose your Hair Type</label>
+          <select name="hairtype">
+            <option>Curly (Type 2A)</option>
+            <option>Curly (Type 2B)</option>
+            <option>Curly (Type 2C)</option>
+            <option>Curly (Type 3A)</option>
+            <option>Curly (Type 3B)</option>
+            <option>Curly (Type 3C)</option>
+            <option>Curly (Type 4A)</option>  
+            <option>Curly (Type 4B)</option>  
+            <option>Curly (Type 4C)</option>  
+          <label for="problems">Problems</label>
+  </select>
+          <select name="problems" multiple> 
+          <option>Dry Hair</option>
+          <option>Tangled Hair</option>
+          <option>Split Ends</option>
+          <option>Balding</option>
+        </select> 
+        <label for="goals">Goals</label>
+          <select name="goals" multiple> 
+          <option>Hair Growth</option>
+          <option>Healthy Ends</option>
+          <option>Moisture</option>
+          <option>Volume</option>
+        </select>
+        <button type="submit">Fetch</button>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+<div class="container">
+
+    <div class="page-header text-center">
+      <span>Welcome <%=user.email%></span>
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+<div> 
+  <button id="five" class="fetch">Get Recommendations</button>
+
+ 
+</div>
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+            <a href="/login"></a>
+            </div>
+        </div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
